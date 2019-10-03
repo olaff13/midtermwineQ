@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block body %}
+{% include "navbar.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pay now</title>
+</head>
+<body>
+    <h4>Pay $250.00 by clicking on the button below.</h4>
+    <form action="/payment" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js"
+                class="stripe-button"
+                data-key="pk_test_OrDBLnozM58BIipUx4XP30yI00sP2NEixe"
+                data-description="A payment for the wine predictor"
+                data-name="WineQuality.com"
+                data-image="/images/logo/hw_project.png"
+                data-amount="25000"></script>
+    </form>
+</body>
+</html>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/scripts.js"></script>
+{% endblock %}

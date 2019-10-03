@@ -1,0 +1,12 @@
+Flask
+WTForms
+SQLAlchemy
+bcrypt
+requests
+flask-heroku
+gunicorn
+stripe
+sklearn
+scipy
+pandas
+numpy
